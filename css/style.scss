@@ -76,77 +76,73 @@ body {
   -o-background-size: cover;
   background-size: cover;
   color: #fff;
-}
-
-.header .navbar {
-  overflow: hidden;
-  padding: 20px 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.header .navbar .logo {
-  font-size: 24px;
-}
-
-.header .navbar .links {
-  float: right;
-}
-
-.header .navbar .links i {
-  margin-left: 5px;
-}
-
-.header .intro h1 {
-  margin: 0;
-  font-size: 50px;
-  font-weight: 800;
-}
-
-.header .intro p {
-  margin: 5px 0 40px;
-  line-height: 1.9;
-  font-size: 20px;
-  color: #e2e2e2;
-}
-
-.header .buttons button {
-  background: transparent;
-  padding: 10px 0;
-  width: 180px;
-  font-size: 14px;
-  border: 1px solid #909090;
-  margin: 0 8px;
-  border-radius: 10px;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.header .buttons button:hover {
-  background-color: $mainColor;
-  border: 1px solid $mainColor;
-  color: #fff;
-}
-
-.header .arrow {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  padding: 40px 0;
-}
-
-.header .arrow i {
-  border: 2px solid #7b7b7b;
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
-  line-height: 32px;
-  cursor: pointer;
+  .navbar {
+    overflow: hidden;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .navbar {
+    .logo {
+      font-size: 24px;
+    }
+    .links {
+      float: right;
+      i {
+        margin-left: 5px;
+      }
+    }
+  }
+  .intro {
+    h1 {
+      margin: 0;
+      font-size: 50px;
+      font-weight: 800;
+    }
+    p {
+      margin: 5px 0 40px;
+      line-height: 1.9;
+      font-size: 20px;
+      color: #e2e2e2;
+    }
+    .buttons {
+      button {
+        background: transparent;
+        padding: 10px 0;
+        width: 180px;
+        font-size: 14px;
+        border: 1px solid #909090;
+        margin: 0 8px;
+        border-radius: 10px;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          background-color: $mainColor;
+          border: 1px solid $mainColor;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    i {
+      border: 2px solid #7b7b7b;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      line-height: 32px;
+      cursor: pointer;
+    }
+  }
 }
 
 /* End Header */

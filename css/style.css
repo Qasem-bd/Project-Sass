@@ -103,7 +103,7 @@ body {
   color: #e2e2e2;
 }
 
-.header .buttons button {
+.header .intro .buttons button {
   background: transparent;
   padding: 10px 0;
   width: 180px;
@@ -115,7 +115,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-.header .buttons button:hover {
+.header .intro .buttons button:hover {
   background-color: #f7600e;
   border: 1px solid #f7600e;
   color: #fff;
