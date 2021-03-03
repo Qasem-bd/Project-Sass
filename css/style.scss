@@ -1,6 +1,10 @@
 /* Start Our Framework */
+$defaultColor: #f7600e;
+$mainColor: #f7600e;
+
 * {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -32,11 +36,11 @@ body {
 }
 
 .main-color {
-  color: #f7600e;
+  color: $mainColor;
 }
 
 .main-background {
-  background-color: #f7600e;
+  background-color: $mainColor;
 }
 
 .overlay {
@@ -62,9 +66,14 @@ body {
 }
 
 /* End Our Framework */
+
 /* Start Header */
+
 .header {
   background: url("../images/header_stock.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   color: #fff;
 }
@@ -112,12 +121,13 @@ body {
   margin: 0 8px;
   border-radius: 10px;
   -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .header .buttons button:hover {
-  background-color: #f7600e;
-  border: 1px solid #f7600e;
+  background-color: $mainColor;
+  border: 1px solid $mainColor;
   color: #fff;
 }
 
@@ -140,7 +150,9 @@ body {
 }
 
 /* End Header */
+
 /* Start Features */
+
 .features {
   padding: 80px 0;
   overflow: hidden;
@@ -157,19 +169,20 @@ body {
 }
 
 .features .box i {
-  color: #f7600e;
+  color: $mainColor;
   border: 1px solid #ccc;
   width: 120px;
   height: 120px;
   border-radius: 50%;
   line-height: 120px;
   -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .features .box i:hover {
-  background-color: #f7600e;
-  border: 1px solid #f7600e;
+  background-color: $mainColor;
+  border: 1px solid $mainColor;
   color: #fff;
 }
 
@@ -185,9 +198,14 @@ body {
 }
 
 /* End Features */
+
 /* Start Subscribe */
+
 .subscribe {
   background: url("../images/subscribe.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -214,7 +232,7 @@ body {
   padding: 10px;
   width: 200px;
   border: 1px s;
-  background-color: #f7600e;
+  background-color: $mainColor;
   border: none;
   color: #fff;
   border-radius: 10px;
@@ -223,7 +241,9 @@ body {
 }
 
 /* End Subscribe */
+
 /* Start Our Work */
+
 .our-work {
   padding: 50px 0;
 }
@@ -248,12 +268,13 @@ body {
   margin-top: 20px;
   color: #555;
   -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .our-work .show-more:hover {
-  background-color: #f7600e;
-  border: 1px solid #f7600e;
+  background-color: $mainColor;
+  border: 1px solid $mainColor;
   color: #fff;
 }
 
@@ -285,6 +306,7 @@ body {
   background-color: rgba(247, 96, 14, 0.9);
   color: #fff;
   -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   display: none;
 }
@@ -308,19 +330,25 @@ body {
   padding: 10px;
   border-radius: 10px;
   -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .our-work .item .over button:hover {
   background-color: #fff;
   border: 1px solid #fff;
-  color: #f7600e;
+  color: $mainColor;
 }
 
 /* End Our Work */
+
 /* Start Testimonials */
+
 .testim {
   background: url("../images/testimonials.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -353,7 +381,7 @@ body {
 
 .testim .fa-chevron-right:hover,
 .testim .fa-chevron-left:hover {
-  color: #f7600e;
+  color: $mainColor;
 }
 
 .testim .fa-chevron-right {
@@ -365,7 +393,9 @@ body {
 }
 
 /* End Testimonials */
+
 /* Start Our Team */
+
 .our-team {
   padding: 50px 0;
 }
@@ -417,8 +447,7 @@ body {
 .our-team .the-team .person img {
   width: 265px;
   height: 290px;
-  -webkit-filter: gray;
-          filter: gray;
+  filter: gray;
   filter: grayscale(1);
   -webkit-filter: grayscale(1);
 }
@@ -437,9 +466,14 @@ body {
 }
 
 /* End Our Team */
+
 /* Start Contact Form */
+
 .contact {
   background: url("../images/city.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -496,7 +530,7 @@ body {
   padding: 10px;
   width: 200px;
   border: 1px s;
-  background-color: #f7600e;
+  background-color: $mainColor;
   border: none;
   color: #fff;
   border-radius: 10px;
@@ -529,7 +563,9 @@ body {
 }
 
 /* End Contact Form */
+
 /* Start Footer */
+
 .footer {
   background-color: #3b434c;
   color: #fff;
@@ -546,4 +582,3 @@ body {
 }
 
 /* End Footer */
-/*# sourceMappingURL=style.css.map */
