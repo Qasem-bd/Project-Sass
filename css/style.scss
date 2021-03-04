@@ -68,13 +68,16 @@ body {
 /* End Our Framework */
 
 /* Start Header */
-
-.header {
-  background: url("../images/header_stock.png");
+.cover {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.header {
+  @extend .cover;
+  background: url("../images/header_stock.png");
   color: #fff;
   .navbar {
     overflow: hidden;
@@ -198,11 +201,8 @@ body {
 /* Start Subscribe */
 
 .subscribe {
+  @extend .cover;
   background: url("../images/subscribe.png");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .subscribe form {
@@ -341,11 +341,8 @@ body {
 /* Start Testimonials */
 
 .testim {
+  @extend .cover;
   background: url("../images/testimonials.png");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .testim .container {
@@ -466,11 +463,8 @@ body {
 /* Start Contact Form */
 
 .contact {
+  @extend .cover;
   background: url("../images/city.png");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .contact .overlay {

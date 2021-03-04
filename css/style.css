@@ -63,9 +63,12 @@ body {
 
 /* End Our Framework */
 /* Start Header */
+.cover, .header, .subscribe, .testim, .contact {
+  background-size: cover;
+}
+
 .header {
   background: url("../images/header_stock.png");
-  background-size: cover;
   color: #fff;
 }
 
@@ -188,7 +191,6 @@ body {
 /* Start Subscribe */
 .subscribe {
   background: url("../images/subscribe.png");
-  background-size: cover;
 }
 
 .subscribe form {
@@ -321,7 +323,6 @@ body {
 /* Start Testimonials */
 .testim {
   background: url("../images/testimonials.png");
-  background-size: cover;
 }
 
 .testim .container {
@@ -440,7 +441,6 @@ body {
 /* Start Contact Form */
 .contact {
   background: url("../images/city.png");
-  background-size: cover;
 }
 
 .contact .overlay {
