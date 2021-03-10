@@ -63,10 +63,6 @@ body {
 
 /* End Our Framework */
 /* Start Header */
-.cover, .header, .subscribe, .testim, .contact {
-  background-size: cover;
-}
-
 .header {
   background: url("../images/header_stock.png");
   color: #fff;
@@ -83,6 +79,7 @@ body {
 
 .header .navbar .logo {
   font-size: 24px;
+  float: left;
 }
 
 .header .navbar .links {
@@ -546,4 +543,7 @@ body {
 }
 
 /* End Footer */
+.cover, .header, .subscribe, .testim, .contact {
+  background-size: cover;
+}
 /*# sourceMappingURL=style.css.map */

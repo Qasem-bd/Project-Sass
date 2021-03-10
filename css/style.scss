@@ -1,7 +1,16 @@
 /* Start Our Framework */
 $defaultColor: #f7600e;
 $mainColor: #f7600e;
-
+$pageDirection: ltr;
+$mainDirection: left;
+$seconderyDirection: right;
+@if $pageDirection == ltr {
+  $mainDirection: left;
+  $seconderyDirection: right;
+} @else {
+  $mainDirection: right;
+  $seconderyDirection: left;
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -68,12 +77,6 @@ body {
 /* End Our Framework */
 
 /* Start Header */
-.cover {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
 .header {
   @extend .cover;
@@ -90,9 +93,10 @@ body {
   .navbar {
     .logo {
       font-size: 24px;
+      float: $mainDirection;
     }
     .links {
-      float: right;
+      float: $seconderyDirection;
       i {
         margin-left: 5px;
       }
@@ -159,7 +163,7 @@ body {
 
 .features .box {
   width: 22%;
-  float: left;
+  float: $mainDirection;
   margin-right: 4%;
 }
 
@@ -279,7 +283,7 @@ body {
 }
 
 .our-work .items-box .item {
-  float: left;
+  float: $mainDirection;
   width: 30%;
   overflow: hidden;
   margin-left: 1.33333%;
@@ -410,7 +414,7 @@ body {
 }
 
 .our-team .the-team .person {
-  float: left;
+  float: $mainDirection;
   width: 24%;
   margin-left: 1%;
   color: #888;
@@ -494,11 +498,11 @@ body {
 }
 
 .contact form input[type="text"] {
-  float: left;
+  float: $mainDirection;
 }
 
 .contact form input[type="email"] {
-  float: right;
+  float: $seconderyDirection;
 }
 
 .contact form textarea {
@@ -516,7 +520,7 @@ body {
 }
 
 .contact form .info button {
-  float: left;
+  float: $mainDirection;
   padding: 10px;
   width: 200px;
   border: 1px s;
@@ -528,7 +532,7 @@ body {
 }
 
 .contact form .info .form-icons {
-  float: right;
+  float: $seconderyDirection;
 }
 
 .contact form .info .form-icons i {
@@ -564,11 +568,19 @@ body {
 }
 
 .footer .copyright {
-  float: left;
+  float: $mainDirection;
 }
 
 .footer .design {
-  float: right;
+  float: $seconderyDirection;
 }
 
 /* End Footer */
+
+// Classes To Extend
+.cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
